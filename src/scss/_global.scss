@@ -1,0 +1,62 @@
+// Container
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+
+  // @media (max-width: $breakpoint1450) {
+  //   max-width: 1200px;
+  // }
+  @media screen and (max-width: 1024px) {
+    padding: 0 40px;
+  }
+  @media (max-width: $breakpoint992) {
+    max-width: 970px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    max-width: 740px;
+    padding: 0 20px;
+  }
+
+  @media (max-width: $breakpoint480) {
+    max-width: none;
+  }
+}
+
+$font-family: "Raleway", sans-serif;
+html {
+  font-family: $font-family;
+}
+// Body Locked
+body {
+  background-color: #860cff;
+  &.locked {
+    overflow: hidden;
+  }
+}
+.btn {
+  border-radius: 2px;
+  padding: 8px 16px;
+  background: #fcffad;
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 22px;
+  // line-height: 140%;
+  color: #860cff;
+}
+
+// Animations
+// Fade
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

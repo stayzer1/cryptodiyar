@@ -1,0 +1,91 @@
+.info {
+  background-color: #fff;
+  padding: clamp(5rem, 4.071rem + 3.81vw, 7.5rem) 0;
+}
+.info__wrapper {
+  background-color: #e3dfff;
+  display: flex;
+  height: 316px;
+  border-radius: 8px;
+}
+.info__crypto {
+  border-radius: 8px;
+  padding: 24px 40px;
+  background: #860cff;
+  max-width: 567px;
+  width: 100%;
+}
+.info__crypto--title {
+  padding-top: 26px;
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: clamp(2rem, 1.257rem + 3.048vw, 4rem);
+
+  line-height: clamp(2.813rem, 1.768rem + 4.286vw, 5.625rem);
+  // line-height: 140%;
+  color: #fff;
+  padding-bottom: 24px;
+}
+.info__crypto--descr {
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: clamp(1.125rem, 0.986rem + 0.571vw, 1.5rem);
+
+  line-height: clamp(1.563rem, 1.354rem + 0.857vw, 2.125rem);
+  // line-height: 140%;
+  color: #fff;
+}
+.info__arbitrage {
+  padding: 40px 60px;
+  max-width: 753px;
+  width: 100%;
+}
+.info__arbitrage--title {
+  padding-bottom: 16px;
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 1.036rem + 1.905vw, 2.75rem);
+
+  line-height: clamp(2.125rem, 1.475rem + 2.667vw, 3.875rem);
+  // line-height: 140%;
+  color: #860cff;
+  width: 350px;
+}
+.info__arbitrage--descr {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: clamp(1rem, 0.907rem + 0.381vw, 1.25rem);
+
+  line-height: clamp(1.625rem, 1.486rem + 0.571vw, 2rem);
+  // line-height: 160%;
+  color: #000;
+}
+@media screen and (max-width: 1200px) {
+  .info__wrapper {
+    height: auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .info__wrapper {
+    flex-direction: column;
+  }
+  .info__crypto,
+  .info__arbitrage {
+    width: 100%;
+    max-width: 100%;
+  }
+  .info--mobile--line {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .info__crypto {
+    padding: 24px 16px;
+  }
+  .info__crypto--title {
+    padding-top: 0;
+  }
+  .info__arbitrage {
+    padding: 40px 16px;
+  }
+}

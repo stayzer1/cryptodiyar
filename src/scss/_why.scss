@@ -1,0 +1,101 @@
+.why {
+  background: linear-gradient(to bottom, #fff 50%, #860cff 50%);
+  padding-bottom: clamp(5rem, 4.071rem + 3.81vw, 7.5rem);
+}
+.why--title {
+  text-align: center;
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: clamp(2rem, 1.721rem + 1.143vw, 2.75rem);
+  line-height: clamp(2.813rem, 2.418rem + 1.619vw, 3.875rem);
+  // line-height: 140%;
+  text-align: center;
+  color: #860cff;
+  padding-bottom: 40px;
+}
+.why--items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.why__item {
+  border-radius: 8px;
+  max-width: 413px;
+  width: 100%;
+  padding: 40px 24px;
+  background: #e3dfff;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+
+  img {
+    width: 80px;
+    height: 80px;
+  }
+}
+.why__item:nth-child(2) {
+  height: 537px;
+  .why__item--title {
+    padding-bottom: 20px;
+    // padding-top: 65px;
+  }
+}
+.why__item--title {
+  padding-top: 60px;
+  padding-bottom: 16px;
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 1.314rem + 0.762vw, 2rem);
+  text-align: left;
+  line-height: clamp(2.125rem, 1.87rem + 1.048vw, 2.813rem);
+  // line-height: 140%;
+  // text-align: center;
+  color: #860cff;
+}
+.why__item--descr {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: clamp(0.875rem, 0.736rem + 0.571vw, 1.25rem);
+
+  line-height: clamp(1.375rem, 1.143rem + 0.952vw, 2rem);
+  // line-height: 160%;
+  color: #000;
+}
+@media screen and (max-width: 1250px) {
+  .why__item--img-and-title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+    gap: 16px;
+    img {
+      width: clamp(4rem, 3.629rem + 1.524vw, 5rem);
+      height: clamp(4.438rem, 4.229rem + 0.857vw, 5rem);
+    }
+  }
+  .why__item--title {
+    padding: 0;
+  }
+  .why--items {
+    align-items: flex-start;
+  }
+  .why__item {
+    height: 490px !important;
+    width: 33%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .why--items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .why__item {
+    width: 100%;
+    height: auto !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .why__item {
+    padding: 40px 16px;
+  }
+}
