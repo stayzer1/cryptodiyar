@@ -5,7 +5,7 @@
 .info__wrapper {
   background-color: #e3dfff;
   display: flex;
-  height: 316px;
+  height: 350px;
   border-radius: 8px;
 }
 .info__crypto {
@@ -59,6 +59,11 @@
   line-height: clamp(1.625rem, 1.486rem + 0.571vw, 2rem);
   // line-height: 160%;
   color: #000;
+}
+@media screen and (max-width: 1280px) {
+  .info__wrapper {
+    height: auto;
+  }
 }
 @media screen and (max-width: 1200px) {
   .info__wrapper {

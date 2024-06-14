@@ -30,7 +30,7 @@ const swiper = new Swiper(".swiper", {
       slidesPerView: "auto",
       freeMode: true,
       centeredSlides: true,
-      loop: false,
+      loop: true,
       spaceBetween: 20,
     },
     1024: {
@@ -52,6 +52,7 @@ function burgerMenu() {
   const burger = document.querySelector(".burger");
   const menu = document.querySelector(".menu");
   const body = document.querySelector("body");
+  const menuLinks = document.querySelectorAll(".menu__item-link");
   burger.addEventListener("click", () => {
     if (!menu.classList.contains("active")) {
       menu.classList.add("active");
@@ -62,6 +63,13 @@ function burgerMenu() {
       burger.classList.remove("active-burger");
       body.classList.remove("locked");
     }
+  });
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("active");
+      burger.classList.remove("active-burger");
+      body.classList.remove("locked");
+    });
   });
   // Вот тут мы ставим брейкпоинт навбара
   window.addEventListener("resize", () => {

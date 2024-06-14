@@ -252,7 +252,7 @@ body.locked {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 316px;
+  height: 350px;
   border-radius: 8px;
 }
 
@@ -638,7 +638,7 @@ body.locked {
 .benefits__button {
   border-radius: 2px;
   padding: 16px 32px;
-  width: 235px;
+  width: 375px;
   height: 60px;
   background: #fcffad;
   font-family: "Raleway", sans-serif;
@@ -656,6 +656,7 @@ body.locked {
   line-height: 28px;
   margin: 0 auto;
   color: #860cff;
+  text-transform: uppercase;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -670,7 +671,6 @@ body.locked {
 .reviews {
   background-color: #fff;
   padding-bottom: clamp(5rem, 4.071rem + 3.81vw, 7.5rem);
-  padding-top: clamp(5rem, 4.071rem + 3.81vw, 7.5rem);
   position: relative;
 }
 
@@ -715,6 +715,7 @@ body.locked {
 .faq {
   padding-bottom: clamp(5rem, 4.071rem + 3.81vw, 7.5rem);
   background-color: #fff;
+  padding-top: clamp(5rem, 4.071rem + 3.81vw, 7.5rem);
 }
 
 .faq--wrapper {
@@ -906,13 +907,19 @@ footer .navbar .header--btn {
 }
 
 .footer--btn--mobile {
-  display: none;
+  display: none !important;
 }
 
 @media screen and (max-width: 1368px) {
   .hero__img1,
   .hero__img2 {
     margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .info__wrapper {
+    height: auto;
   }
 }
 
@@ -1174,8 +1181,9 @@ footer .navbar .header--btn {
     display: flex;
     left: 0;
     top: 0;
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
+    gap: 40px;
     padding-left: 16px;
     border-radius: 8px 0 0 8px;
     -webkit-box-orient: vertical;
@@ -1356,6 +1364,8 @@ footer .navbar .header--btn {
   .hero__img2 {
     left: 260px;
     top: 240px;
+    width: 120px;
+    height: 120px;
   }
 
   .hero__images {
