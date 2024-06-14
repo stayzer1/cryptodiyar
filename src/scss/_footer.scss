@@ -33,7 +33,7 @@ footer {
 .menu__footer {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: clamp(0.938rem, -2.909rem + 6.01vw, 2.5rem);
   margin-left: auto;
 }
 .menu__footer {
@@ -52,8 +52,17 @@ footer {
 .footer--btn--mobile {
   display: none !important;
 }
+@media screen and (max-width: 1250px) {
+  .menu__footer {
+    width: 730px;
+    justify-content: end;
+  }
+}
 @media screen and (max-width: 1024px) {
   footer {
+    .menu__footer {
+      width: auto;
+    }
     .navbar {
       padding: 60px 0;
       flex-direction: column;
