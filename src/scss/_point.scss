@@ -48,7 +48,7 @@
 }
 .point__info--button {
   display: block;
-  width: 235px;
+  width: clamp(19.375rem, 17.982rem + 5.714vw, 23.125rem);
   height: 60px;
   border-radius: 2px;
   padding: 16px 32px;
@@ -63,6 +63,7 @@
   line-height: clamp(1.375rem, 1.236rem + 0.571vw, 1.75rem);
   // line-height: 140%;
   color: #fff;
+  text-transform: uppercase;
   transition: all 0.3s ease;
 }
 .point__info--button:hover {
