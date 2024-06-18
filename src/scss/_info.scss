@@ -1,9 +1,10 @@
 .info {
-  background-color: #fff;
-  padding: clamp(5rem, 4.071rem + 3.81vw, 7.5rem) 0;
+  // background-color: #fff;
+  // padding: clamp(5rem, 4.071rem + 3.81vw, 7.5rem) 0;
 }
 .info__wrapper {
   background-color: #e3dfff;
+  box-shadow: 0 0 25px 0 rgba(255, 255, 255, 0.35);
   display: flex;
   height: 350px;
   border-radius: 8px;
