@@ -301,7 +301,7 @@ body.locked {
   font-size: clamp(1.5rem, 1.036rem + 1.905vw, 2.75rem);
   line-height: clamp(2.125rem, 1.475rem + 2.667vw, 3.875rem);
   color: #860cff;
-  width: 350px;
+  width: 400px;
 }
 
 .info__arbitrage--descr {
